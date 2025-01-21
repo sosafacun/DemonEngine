@@ -3,14 +3,17 @@ using System.IO;
 using Newtonsoft.Json;
 using Godot;
 
-public class InitData{
-    private static List<Element> elements { get; set; }
-    private static List<Resistance> resistances { get; set; }
-    private static List<Ailment> ailments {get; set;}
-    private static List<Race> races {get;set;}
-    private static List<Stat> stats {get;set;}
+public partial class InitData: Node{
+    private static List<Element> elements;
+    private static List<Resistance> resistances;
+    private static List<Ailment> ailments;
+    private static List<Race> races;
+    private static List<Stat> stats;
 
-    public InitData(){}
+    public override void _Ready()
+	{
+        LoadJsons();
+    }
 
     public void LoadJsons(){
 
@@ -40,9 +43,9 @@ public class InitData{
         stats = statsData["stats"];
     }
 
-    public void showResistances(){
-        foreach(Element element in elements){
-            GD.Print(element.Name);
-        }
-    }
+    public static List<Resistance> GetResistances() => resistances;
+    public static List<Ailment> GetAilments() => ailments;
+    public static List<Element> GetElements() => elements;
+    public static List<Race> GetRaces() => races;
+    public static List<Stat> GetStats(/*Demon demon*/) => stats;
 }

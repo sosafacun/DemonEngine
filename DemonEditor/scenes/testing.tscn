@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://be5myel58bh78"]
+
+[ext_resource type="Script" path="res://DemonEditor/scenes/Testing.cs" id="1_61tje"]
+
+[node name="Testing" type="Control"]
+layout_mode = 3
+anchor_left = 0.236
+anchor_top = 0.272
+anchor_right = 0.674
+anchor_bottom = 0.741
+offset_left = -7.87201
+offset_top = -0.256012
+offset_right = -0.447998
+offset_bottom = -0.16803
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_61tje")
