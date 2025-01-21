@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://drmsng4rlbiab"]
+
+[ext_resource type="Script" path="res://DemonEditor/scenes/resistances/ResistanceDropdown.cs" id="1_iimde"]
+
+[node name="AilmentDropdown" type="Control"]
+layout_mode = 3
+anchor_right = 0.278
+anchor_bottom = 0.037
+offset_right = -0.256042
+offset_bottom = 0.0240002
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AilmentLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.125
+anchor_bottom = 1.0
+offset_bottom = -1.0
+horizontal_alignment = 1
+
+[node name="ResistanceDropdown" type="OptionButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65
+anchor_right = 1.0
+anchor_bottom = 0.833
+offset_left = -1.52588e-05
+offset_bottom = 0.00799942
+script = ExtResource("1_iimde")
