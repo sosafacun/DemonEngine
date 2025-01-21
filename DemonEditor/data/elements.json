@@ -10,8 +10,7 @@
       {"id": 8, "name": "ALMIGHTY", "isDefault": true},
       {"id": 9, "name": "SUPPORT", "isDefault": true},
       {"id": 10, "name": "HEALING", "isDefault": true},
-      {"id": 11, "name": "PASSIVE", "isDefault": true},
-      {"id": 12, "name": "RUIN", "isDefault": false}
+      {"id": 11, "name": "PASSIVE", "isDefault": true}
     ]
   }
   
