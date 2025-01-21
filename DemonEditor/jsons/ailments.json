@@ -1,0 +1,14 @@
+{
+    "ailments": [
+      {"id": 1, "name": "FREEZE", "isDefault": false},
+      {"id": 2, "name": "CONFUSE", "isDefault": false},
+      {"id": 3, "name": "CHARM", "isDefault": false},
+      {"id": 4, "name": "MUTE", "isDefault": false},
+      {"id": 5, "name": "SLEEP", "isDefault": false},
+      {"id": 6, "name": "DOOM", "isDefault": false},
+      {"id": 7, "name": "STUN", "isDefault": false},
+      {"id": 8, "name": "POISON", "isDefault": false},
+      {"id": 9, "name": "DEATH", "isDefault": true}
+    ]
+  }
+  

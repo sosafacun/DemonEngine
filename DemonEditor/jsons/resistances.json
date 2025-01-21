@@ -1,0 +1,11 @@
+{
+    "resistances": [
+      {"id": 1, "name": "DEFAULT", "affectsAilments": true},
+      {"id": 2, "name": "RES", "affectsAilments": true},
+      {"id": 3, "name": "WK", "affectsAilments": true},
+      {"id": 4, "name": "NULL", "affectsAilments": true},
+      {"id": 5, "name": "RPL"},
+      {"id": 6, "name": "DR"}
+    ]
+  }
+  

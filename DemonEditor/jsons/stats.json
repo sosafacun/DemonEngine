@@ -1,0 +1,9 @@
+{
+    "stats": [
+      {"id": 1, "name": "STR", "value": 0, "priority": 0, "description":"Affects physical attacks and magic damage rates."},
+      {"id": 2, "name": "VIT", "value": 0, "priority": 0, "description":"Affects max HP and damage reduction rate." },
+      {"id": 3, "name": "MAG", "value": 0, "priority": 0, "description":"Affects magic (non-physical) damage rates."},
+      {"id": 4, "name": "AGI", "value": 0, "priority": 0, "description":"Affects hit/evasion rate."},
+      {"id": 5, "name": "LUC", "value": 0, "priority": 0, "description":"Affects crit chance and ailment hit rate."}
+    ]
+  }
