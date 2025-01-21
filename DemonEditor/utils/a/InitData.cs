@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.IO;
 using Godot;
 
 public class InitData{
