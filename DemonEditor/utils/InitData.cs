@@ -23,12 +23,12 @@ public partial class InitData: Node{
         resistances = resistancesData["resistances"];
 
         //Read, parse and load elements from the .json file into a List
-        string elementsJson = File.ReadAllText("./DemonEditor/data/element/elements.json");
+        string elementsJson = File.ReadAllText("./DemonEditor/data/affinity/element/elements.json");
         var elementsData = JsonConvert.DeserializeObject<Dictionary<string, List<Element>>>(elementsJson);
         elements = elementsData["elements"];
 
         //Read, parse and load ailments from the .json file into a List
-        string ailmentsJson = File.ReadAllText("./DemonEditor/data/ailment/ailments.json");
+        string ailmentsJson = File.ReadAllText("./DemonEditor/data/affinity/ailment/ailments.json");
         var ailmentsData = JsonConvert.DeserializeObject<Dictionary<string, List<Ailment>>>(ailmentsJson);
         ailments = ailmentsData["ailments"];
         

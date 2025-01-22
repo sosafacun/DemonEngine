@@ -1,46 +1,31 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
-public partial class Testing : Control
-{
+public partial class Testing : Control{
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		DisplayElementalResistances();
-		DisplayAilmentResistances();
+        DisplayMenu("%Elements", ".\\DemonEditor\\scenes\\resistances\\elemental_dropdown.tscn", InitData.GetElements());
+        DisplayMenu("%Ailments", ".\\DemonEditor\\scenes\\resistances\\ailment_dropdown.tscn", InitData.GetAilments());
 	}
 
-	private void DisplayElementalResistances(){
-		Control elementalNode = GetNode<Control>("%Elements");
-		var elementalDropdownMenu = GD.Load<PackedScene>(".\\DemonEditor\\scenes\\resistances\\elemental_dropdown.tscn");
-		int yPos = 36;
+    private void DisplayMenu<A>(String nodeName, String scenePath, List<A> affinities) where A : IAffinity{
 
-		foreach(Element element in InitData.GetElements())
+        Control selectedNode = GetNode<Control>(nodeName);
+        var dropdownMenu = GD.Load<PackedScene>(scenePath);
+        int yPos = 36;
+
+        foreach(A affinity in affinities)
         {
-            if(element.IsDefault != true){
-                Control new_dropdownScene = elementalDropdownMenu.Instantiate<Control>();
-                new_dropdownScene.GetNode<Label>("%ElementalLabel").Text = element.Name;
+            if(affinity.IsDefault != true){
+                Control new_dropdownScene = dropdownMenu.Instantiate<Control>();
+                new_dropdownScene.GetNode<Label>("%Label").Text = affinity.Name;
                 new_dropdownScene.Position = new Vector2(0, yPos);
                 yPos += 36;
-                elementalNode.AddChild(new_dropdownScene);
+                selectedNode.AddChild(new_dropdownScene);
             }
         }
-	}
-
-	private void DisplayAilmentResistances(){
-		Control ailmentNode = GetNode<Control>("%Ailments");
-		var ailmentDropdownMenu = GD.Load<PackedScene>(".\\DemonEditor\\scenes\\resistances\\ailment_dropdown.tscn");
-		int yPos = 36;
-
-		foreach(Ailment ailment in InitData.GetAilments())
-        {
-            if(ailment.IsDefault != true){
-                Control new_dropdownScene = ailmentDropdownMenu.Instantiate<Control>();
-                new_dropdownScene.GetNode<Label>("%AilmentLabel").Text = ailment.Name;
-                new_dropdownScene.Position = new Vector2(0, yPos);
-                yPos += 36;
-                ailmentNode.AddChild(new_dropdownScene);
-            }
-        }
-	}
+        
+    }
 }
