@@ -8,7 +8,7 @@ public partial class ResistanceDropdown : OptionButton
 	public bool isElementalDropdown;
 	public override void _Ready()
 	{
-		foreach (Resistance resistance in InitData.GetResistances()){
+		foreach (Resistance resistance in InitData.resistances){
 			if(isElementalDropdown){
 				AddItem(resistance.Name);
 			}

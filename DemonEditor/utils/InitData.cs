@@ -2,13 +2,34 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Godot;
+using System.Windows.Markup;
 
 public partial class InitData: Node{
-    private static List<Element> elements;
-    private static List<Resistance> resistances;
-    private static List<Ailment> ailments;
-    private static List<Race> races;
-    private static List<Stat> stats;
+    private static List<Element> _elements;
+    public static List<Element> elements{
+        get => _elements;
+        set => _elements = value;
+    }
+    private static List<Resistance> _resistances;
+    public static List<Resistance> resistances{
+        get => _resistances;
+        set => _resistances = value;
+    }
+    private static List<Ailment> _ailments;
+    public static List<Ailment> ailments{
+        get => _ailments;
+        set => _ailments = value;
+    }
+    private static List<Race> _races;
+    public static List<Race> races{
+        get => _races;
+        set => _races = value;
+    }
+    private static List<Stat> _stats;
+    public static List<Stat> stats{
+        get => _stats;
+        set => _stats = value;
+    }
 
     public override void _Ready()
 	{
@@ -42,10 +63,4 @@ public partial class InitData: Node{
         var statsData = JsonConvert.DeserializeObject<Dictionary<string, List<Stat>>>(statsJson);
         stats = statsData["stats"];
     }
-
-    public static List<Resistance> GetResistances() => resistances;
-    public static List<Ailment> GetAilments() => ailments;
-    public static List<Element> GetElements() => elements;
-    public static List<Race> GetRaces() => races;
-    public static List<Stat> GetStats(/*Demon demon*/) => stats;
 }
