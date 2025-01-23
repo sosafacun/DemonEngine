@@ -26,7 +26,7 @@ This is an attempt to make an engine to create SMT-inspired games.
 - **Elements**: All attacks have elements that are crucial for the combat system in the game.
 - **Press Turn Icon System**: This combat system revolves around 2 "phases" (to call them something) that reward or punish either party based on their actions in combat.
     - The first phase is the round, which determines who can act: the enemy or the player.
-    - Once the round starts, each character on the team will add 1 action to the round.
+    - Once the round starts, each character on the team will add 1 action to the round. This is the 2nd phase.
         - If you have **four characters** in your party then you'll have **four actions** during your round. If you had 3, then you'd have 3 actions for your round.
         - If the enemy has 2 characters, then they'll have only 2 actions during their round.
         - If any character during **an opposing round** gets killed then their next round will have that many fewer actions (in the example above, if you killed 1 enemy, the next enemy round will have just 1 action).
