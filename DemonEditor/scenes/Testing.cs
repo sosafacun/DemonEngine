@@ -8,6 +8,8 @@ public partial class Testing : Control{
 	{
         DisplayMenu("%Elements", ".\\DemonEditor\\scenes\\resistances\\elemental_dropdown.tscn", InitData.elements);
         DisplayMenu("%Ailments", ".\\DemonEditor\\scenes\\resistances\\ailment_dropdown.tscn", InitData.ailments);
+        PopulateEditMenus("%ElementEditor", InitData.elements, true);
+        PopulateEditMenus("%AilmentEditor", InitData.ailments, false);
 	}
 
     //nodeName = node where the dropdowns and labels will be stored
@@ -18,10 +20,9 @@ public partial class Testing : Control{
         Control selectedNode = GetNode<Control>(nodeName);
         var dropdownMenu = GD.Load<PackedScene>(scenePath);
         //initial position
-        int yPos = 36;
+        int yPos = 50;
 
-        foreach(A affinity in affinities)
-        {
+        foreach(A affinity in affinities){
             if(affinity.IsDefault != true){
                 Control new_dropdownScene = dropdownMenu.Instantiate<Control>();
                 //set the label text to the name of the element / ailment
@@ -29,11 +30,35 @@ public partial class Testing : Control{
 
                 //add spacing for the following dropdown menu
                 new_dropdownScene.Position = new Vector2(0, yPos);
-                yPos += 36;
+                yPos += 50;
 
                 selectedNode.AddChild(new_dropdownScene);
             }
         }
         
     }
+
+    private void PopulateEditMenus<A>(string tabName, List<A> affinities, bool isElemental) where A: IAffinity{
+        Control selectedNode = GetNode<Control>(tabName);
+        var editTemplate = GD.Load<PackedScene>(".\\DemonEditor\\scenes\\affinity_editor\\affinity_editor.tscn");
+
+        int yPos = 50;
+
+        foreach(A affinity in affinities){
+            AffinityEditor new_EditScene = editTemplate.Instantiate<AffinityEditor>();
+            new_EditScene.GetNode<Label>("%Label").Text = affinity.Name;
+
+            new_EditScene.Position = new Vector2(0, yPos);
+            yPos += 50;
+
+            if(tabName == "%ElementEditor"){
+                new_EditScene.isElemental = true;
+            } else {
+                new_EditScene.isElemental = false;
+            }
+
+            selectedNode.AddChild(new_EditScene);
+        }
+    }
+
 }

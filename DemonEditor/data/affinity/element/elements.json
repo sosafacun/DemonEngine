@@ -1,16 +1,29 @@
 {
-    "elements": [
-      {"id": 1, "name": "PHYS", "isDefault": false},
-      {"id": 2, "name": "FIRE", "isDefault": false},
-      {"id": 3, "name": "ICE", "isDefault": false},
-      {"id": 4, "name": "ELEC", "isDefault": false},
-      {"id": 5, "name": "FORCE", "isDefault": false},
-      {"id": 6, "name": "LIGHT", "isDefault": false},
-      {"id": 7, "name": "DARK", "isDefault": false},
-      {"id": 8, "name": "ALMIGHTY", "isDefault": true},
-      {"id": 9, "name": "SUPPORT", "isDefault": true},
-      {"id": 10, "name": "HEALING", "isDefault": true},
-      {"id": 11, "name": "PASSIVE", "isDefault": true}
-    ]
-  }
-  
+  "elements": [
+    {
+      "Id": 4,
+      "Name": "ELEC",
+      "IsDefault": false
+    },
+    {
+      "Id": 5,
+      "Name": "FORCE",
+      "IsDefault": false
+    },
+    {
+      "Id": 6,
+      "Name": "LIGHT",
+      "IsDefault": false
+    },
+    {
+      "Id": 7,
+      "Name": "DARK",
+      "IsDefault": false
+    },
+    {
+      "Id": 8,
+      "Name": "ALMIGHTY",
+      "IsDefault": true
+    }
+  ]
+}

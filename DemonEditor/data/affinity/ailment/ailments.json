@@ -1,14 +1,24 @@
 {
-    "ailments": [
-      {"id": 1, "name": "DEATH", "isDefault": true},
-      {"id": 2, "name": "FREEZE", "isDefault": false},
-      {"id": 3, "name": "CONFUSE", "isDefault": false},
-      {"id": 4, "name": "CHARM", "isDefault": false},
-      {"id": 5, "name": "MUTE", "isDefault": false},
-      {"id": 6, "name": "SLEEP", "isDefault": false},
-      {"id": 7, "name": "DOOM", "isDefault": false},
-      {"id": 8, "name": "STUN", "isDefault": false},
-      {"id": 9, "name": "POISON", "isDefault": false}
-    ]
+  "ailments": [
+    {
+      "Id": 1,
+      "Name": "DEATH",
+      "IsDefault": true
+    },
+    {
+      "Id": 2,
+      "Name": "FREEZE",
+      "IsDefault": false
+    },
+    {
+      "Id": 3,
+      "Name": "CONFUSE",
+      "IsDefault": false
+    },
+    {
+      "Id": 4,
+      "Name": "CHARM",
+      "IsDefault": false
+    }
+  ]
 }
-  
