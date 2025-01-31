@@ -16,7 +16,7 @@ public class Stat{
     public Stat(int id, string name, int value, int priority, string description){
         Id = id;
         Name = name;
-        Value = value;
+        _StatValue = value;
         Priority = priority;
         Description = description;
     }
