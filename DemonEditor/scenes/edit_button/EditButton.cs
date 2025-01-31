@@ -29,7 +29,7 @@ public partial class EditButton : Button
 			InitData.elements.Remove(elementToDelete);
 			//saves that removal to the .json
 			SaveToJson("./DemonEditor/data/affinity/element/elements.json",InitData.elements,"elements");
-		} else {
+		} else if (!isEditButton){
 			Ailment ailmentToDelete = InitData.ailments.Find(a => a.Name == label.Text);
 			InitData.ailments.Remove(ailmentToDelete);
 			SaveToJson("./DemonEditor/data/affinity/ailment/ailments.json",InitData.ailments,"ailments");
