@@ -1,0 +1,10 @@
+{
+    "targets": [
+      {"id": 1, "name": "SINGLE ENEMY"},
+      {"id": 2, "name": "SINGLE ALLY"},
+      {"id": 3, "name": "ALL ALLIES"},
+      {"id": 4, "name": "ALL ENEMIES"},
+      {"id": 5, "name": "RANDOM ENEMIES"},
+      {"id": 6, "name": "ALL"}
+    ]
+  }

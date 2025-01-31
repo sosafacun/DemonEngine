@@ -39,5 +39,5 @@ This is an attempt to make an engine to create SMT-inspired games.
             - Missing an ailment-inducing attack **does NOT** take 2 PTIs from the casting party. However, if the targeted party nullifies the ailment, it does make the attacking party lose 2PTIs. At the same time, if the targeted party is weak to that ailment, it will grant the attacking party half PTI.
             - All these rules also apply to enemy actions.
         - Buffing and debuffing change from game to game, but I'll try to stick to SMT IV's system of -4/+4 to Attack, Defense and Hit/Evasion rate that does not decay.
-- Races: Each demon has a race. That race usually determines the nature of the demon for the negotiation as well as their fussion. It's also used to sort them in the Compendium.
-- The Demon Compendium: a, in-game database holding all of the demons' data. Kinda like a Pokedex, but you can throw money at it to summon the registered demon.
+- **Races**: Each demon has a race. That race usually determines the nature of the demon for the negotiation as well as their fussion. It's also used to sort them in the Compendium.
+- **The Demon Compendium**: an in-game database holding all of the demons' data. Kinda like a Pokedex, but you can throw money at it to summon any registered demon.

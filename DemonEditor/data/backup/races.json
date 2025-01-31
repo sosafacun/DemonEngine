@@ -1,0 +1,19 @@
+{
+    "races": [
+        {"id": 1, "name": "DEITY"},
+        {"id": 2, "name": "EVIL"},
+        {"id": 3, "name": "FIEND"},
+        {"id": 4, "name": "DRAGON"},
+        {"id": 5, "name": "BRUTE"},
+        {"id": 6, "name": "BEAST"},
+        {"id": 7, "name": "ELEMENTAL"},
+        {"id": 8, "name": "FEMME"},
+        {"id": 9, "name": "YOMA"},
+        {"id": 10, "name": "FAIRY"},
+        {"id": 11, "name": "AVIAN"},
+        {"id": 12, "name": "HOLY"},
+        {"id": 13, "name": "JAKI"},
+        {"id": 14, "name": "TYRANT"},
+        {"id": 15, "name": "SPIRIT"}
+    ]
+}
