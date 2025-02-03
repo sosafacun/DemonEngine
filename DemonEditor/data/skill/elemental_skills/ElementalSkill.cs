@@ -9,8 +9,10 @@ public class ElementalSkill: ISkill{
     public Stat MainStat {get;set;}
     public int NumberOfHits {get;set;}
     public double StatMultiplier {get;set;}
+    public double CriticalRate {get;set;}
+    public Ailment BonusEffect {get;set;}
     
-    public ElementalSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Element element, int numberOfHits, int skillBaseDamage, Stat mainStat, double statMultiplier){
+    public ElementalSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Element element, int numberOfHits, int skillBaseDamage, Stat mainStat, double statMultiplier, double criticalRate, Ailment bonusEffect){
         Id = id;
         SkillName = skillName;
         SkillDescription = skillDescription;
@@ -21,16 +23,17 @@ public class ElementalSkill: ISkill{
         SkillBaseDamage = skillBaseDamage;
         MainStat = mainStat;
         StatMultiplier = statMultiplier;
+        CriticalRate = criticalRate;
+        BonusEffect = bonusEffect;
     }
-
-
-    public int DamageFormula(/*List<Demon> selectedDemons*/){
+}
+/*
+    public int DamageFormula(List<Demon> selectedDemons){
             int damageDealt = 0;
             float resistanceMultiplier;
             float statMultiplier;
             float attackerMultiplier;
             Element demonAffinity;
-            /*
 
             demonAffinity = InitData.elements.Find(e => e.Name == Skill.skillName);
 
@@ -55,7 +58,6 @@ public class ElementalSkill: ISkill{
             attackerMultiplier = attackerDemon.Stat.Find(s => S.Name == mainStat.Name).Get.statValue;
             attackerMultiplier = attackerMultiplier * effectMultiplier;
             damageDealt = (skillBaseDamage * attackerMultiplier) *resistanceMultiplier
-            */
             return damageDealt;
     }
-}
+*/

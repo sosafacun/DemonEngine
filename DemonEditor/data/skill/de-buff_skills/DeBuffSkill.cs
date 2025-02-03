@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public class DeBuffSkill : ISkill{
     public int Id {get;set;}
     public string SkillName {get;set;}
@@ -6,15 +8,20 @@ public class DeBuffSkill : ISkill{
     public double HitRate {get;set;}
     public IAffinity Affinity {get;set;}
     public int SkillBaseDamage {get;set;}
-    public Stat MainStat {get;set;}
+    public List<Stat> AffectedStats {get;set;}
 
-    public DeBuffSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Element element)
+    public DeBuffSkill(int id, string skillName, string skillDescription, Target target, Element element, List<Stat> affectedStats)
     {
         Id = id;
         SkillName = skillName;
         SkillDescription = skillDescription;
         Target = target;
-        HitRate = hitRate;
         Affinity = element;
+        AffectedStats = affectedStats;
     }
 }
+
+
+/*
+method to set the (de)buffs applied to selected characters (enemies or allies)
+*/

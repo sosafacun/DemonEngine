@@ -6,4 +6,7 @@ public class Ailment : IAffinity
 
     public bool IsDefault {get; set;}
 
+    public string Description {get;set;}
+    public bool LastsAfterBattle {get;set;}
+
 }

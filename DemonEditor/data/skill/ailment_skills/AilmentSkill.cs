@@ -6,11 +6,10 @@ public class AilmentSkill : ISkill
     public Target Target {get;set;}
     public double HitRate {get;set;}
     public IAffinity Affinity {get;set;}
-    public int SkillBaseDamage {get;set;}
     public Stat MainStat {get;set;}
     public double StatMultiplier {get;set;}
 
-    public AilmentSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Ailment ailment, int numberOfHits, Stat mainStat, double statMultiplier)
+    public AilmentSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Ailment ailment, Stat mainStat, double statMultiplier)
     {
         Id = id;
         SkillName = skillName;

@@ -31,6 +31,11 @@ public partial class InitData: Node{
         set => _stats = value;
     }
 
+    private static List<Target> _targets;
+    public static List<Target> targets{
+        get => _targets;
+        set => _targets = value;
+    }
     public override void _Ready()
 	{
         LoadJsons();
