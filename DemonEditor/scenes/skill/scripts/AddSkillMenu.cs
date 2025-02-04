@@ -4,9 +4,9 @@ public partial class AddSkillMenu : TabBar
 {
 
 	//paths to the scenes to load them and show them.
-	private string AddElementalSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/add_elemental_skill.tscn";
-	private string AddDeBuffSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/add_de_buff_skill.tscn";
-	private string AddAilmentSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/add_ailment_skill.tscn";
+	private string AddElementalSkillMenuPath = "./DemonEditor/scenes/skill/add_elemental_skill.tscn";
+	private string AddDeBuffSkillMenuPath = "./DemonEditor/scenes/skill/add_de_buff_skill.tscn";
+	private string AddAilmentSkillMenuPath = "./DemonEditor/scenes/skill/add_ailment_skill.tscn";
 
 	//Node where the loaded scenes will be instantiated
 	private Control SkillNode;
@@ -18,8 +18,6 @@ public partial class AddSkillMenu : TabBar
 
 		TargetDropdown = GetNode<OptionButton>("%TargetDropdown");
 		InitData.PopulateNormalDropdown<Target>(TargetDropdown, InitData.targets);
-	}
-	public override void _Process(double delta){
 	}
 
 	//Depending on the selected type of skill, the menu for that skill creation will pop up.
