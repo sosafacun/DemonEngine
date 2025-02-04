@@ -16,9 +16,10 @@ public partial class Testing : Control{
     //nodeName = node where the dropdowns and labels will be stored
     //scenePath = scene where the dropdown and label scene are stored. This will create the current aviable ailments / elements (useful for when CRUD is implemented)
     //List<A> any list with the Affinity Interface implementation = Element and Ailment classes have it.
-    private void DisplayMenu<A>(String nodeName, String scenePath, List<A> affinities) where A : IAffinity{
+    private static void DisplayMenu<A>(String nodeName, String scenePath, List<A> affinities) where A : IAffinity{
         //Since there are only 2 columns (elements and ailments), this takes care of both
-        Control selectedNode = GetNode<Control>(nodeName);
+        Node nodeInstance = new Node();
+        Control selectedNode = nodeInstance.GetNode<Control>(nodeName);
         var dropdownMenu = GD.Load<PackedScene>(scenePath);
         //initial position
         int yPos = 50;
@@ -40,8 +41,9 @@ public partial class Testing : Control{
     }
 
     //This piece of code will be used for the Demon Creation Menu. It will list all of the selectable elements and ailments.
-    private void PopulateEditMenus<A>(string tabName, List<A> affinities, bool isElemental) where A: IAffinity{
-        Control selectedNode = GetNode<Control>(tabName);
+    private static void PopulateEditMenus<A>(string tabName, List<A> affinities, bool isElemental) where A: IAffinity{
+        Node nodeInstance = new Node();
+        Control selectedNode = nodeInstance.GetNode<Control>(tabName);
         var editTemplate = GD.Load<PackedScene>("./DemonEditor/scenes/affinity_editor/affinity_editor.tscn");
 
         int yPos = 50;
