@@ -10,16 +10,8 @@ public class AilmentSkill : ISkill
     public Stat MainStat {get;set;}
     public double StatMultiplier {get;set;}
 
-    public AilmentSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Ailment ailment, Stat mainStat, double statMultiplier)
+    public AilmentSkill()
     {
-        Id = id;
-        SkillName = skillName;
-        SkillDescription = skillDescription;
-        Target = target;
-        HitRate = hitRate;
-        Affinity = ailment;
-        MainStat = mainStat;
-        StatMultiplier = statMultiplier;
     }
 
     //public bool CalculateAilmentHit

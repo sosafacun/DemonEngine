@@ -37,7 +37,7 @@ public partial class EditButton : Button
 			}
 		}
 		
-	private void SaveToJson<A>(String save_path,List<A> affinties, string jsonName) where A: IAffinity{
+	private static void SaveToJson<A>(String save_path,List<A> affinties, string jsonName) where A: IAffinity{
 		//set the Dictionary key
 		var affinityData = new Dictionary<string, List<A>>{
 			{jsonName, affinties}
