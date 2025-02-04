@@ -1,5 +1,3 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sosafacun_DemonEngine&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sosafacun_DemonEngine)
----
 # Demon Engine
 ---
 
@@ -43,3 +41,7 @@ This is an attempt to make an engine to create SMT-inspired games.
         - Buffing and debuffing change from game to game, but I'll try to stick to SMT IV's system of -4/+4 to Attack, Defense and Hit/Evasion rate that does not decay.
 - **Races**: Each demon has a race. That race usually determines the nature of the demon for the negotiation as well as their fussion. It's also used to sort them in the Compendium.
 - **The Demon Compendium**: an in-game database holding all of the demons' data. Kinda like a Pokedex, but you can throw money at it to summon any registered demon.
+
+---
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sosafacun_DemonEngine&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sosafacun_DemonEngine)
