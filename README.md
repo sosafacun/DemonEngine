@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sosafacun_DemonEngine&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sosafacun_DemonEngine)
+---
 # Demon Engine
 ---
 
