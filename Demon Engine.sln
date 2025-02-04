@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smt.net-redo", "smt.net-redo.csproj", "{FF91CBE2-7BC0-4ADA-8780-0AEDCAE37333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demon Engine", "Demon Engine.csproj", "{FF91CBE2-7BC0-4ADA-8780-0AEDCAE37333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
