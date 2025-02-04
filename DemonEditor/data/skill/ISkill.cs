@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public interface ISkill{
     int Id {get;set;}
     string SkillName {get;set;}

@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+namespace DemonEditor;
+
 public partial class AddElementalSkill : Control
 {
 	//Get the dropdown where the elements will be displayed
@@ -20,7 +22,7 @@ public partial class AddElementalSkill : Control
 		InitData.PopulateNormalDropdown<Stat>(StatDropdown, InitData.stats);
 	}
 
-	//This will be used to expand the elemental skill creator menu to include an ailment to that skill.
+	//This expands the elemental skill to have an ailment when the checkbox is toggled.
 	private void AppliesAilmentSelected(bool toggled){
 		if(toggled){
 			var packedScene = GD.Load<PackedScene>(BonusEffectPath);

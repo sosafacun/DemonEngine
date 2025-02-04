@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class Resistance : IData
 {
     public int Id { get; set; }

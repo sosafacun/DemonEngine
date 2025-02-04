@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class ElementalResistance
 {
     public Element Element { get; set; }

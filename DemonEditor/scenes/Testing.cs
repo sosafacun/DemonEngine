@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+namespace DemonEditor;
 
 public partial class Testing : Control{
 	// Called when the node enters the scene tree for the first time.

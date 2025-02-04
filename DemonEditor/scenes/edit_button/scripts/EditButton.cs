@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+namespace DemonEditor;
 public partial class EditButton : Button
 {
 	[Export]

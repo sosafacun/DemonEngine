@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class AilmentResistance
 {
     public Ailment Ailment { get; set; }

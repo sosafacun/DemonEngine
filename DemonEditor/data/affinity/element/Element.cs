@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class Element : IAffinity
 {
     public int Id {get; set;}

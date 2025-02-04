@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 
+namespace DemonEditor;
 public class DeBuffSkill : ISkill{
     public int Id {get;set;}
     public string SkillName {get;set;}

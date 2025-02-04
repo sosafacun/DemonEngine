@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class AilmentSkill : ISkill
 {
     public int Id {get;set;}

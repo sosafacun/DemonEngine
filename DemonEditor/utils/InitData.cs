@@ -3,6 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Godot;
 using System.Windows.Markup;
+namespace DemonEditor;
 
 public partial class InitData: Node{
     private static List<Element> _elements;
@@ -41,7 +42,7 @@ public partial class InitData: Node{
         LoadJsons();
     }
 
-    private void LoadJsons(){
+    private static void LoadJsons(){
 
         //Read, parse and load resistances from the .json file into a List
         string resistancesJson = File.ReadAllText("./DemonEditor/data/resistance/resistances.json");

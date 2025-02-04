@@ -1,3 +1,4 @@
+namespace DemonEditor;
 public class Race: IData
 {
     public int Id { get; set; }

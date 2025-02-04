@@ -1,4 +1,5 @@
 using Godot;
+namespace DemonEditor;
 
 public partial class AddSkillMenu : TabBar
 {

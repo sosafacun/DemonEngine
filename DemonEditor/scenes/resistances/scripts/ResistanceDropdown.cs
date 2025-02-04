@@ -1,6 +1,7 @@
 using Godot;
 using System;
 
+namespace DemonEditor;
 public partial class ResistanceDropdown : OptionButton
 {
 	//Used to determine if the info is an ailment or an element

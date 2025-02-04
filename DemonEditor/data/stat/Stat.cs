@@ -1,5 +1,6 @@
 using System.Windows.Markup;
 
+namespace DemonEditor;
 public class Stat: IData{
     public int Id {get;set;}
     public string Name {get;set;}

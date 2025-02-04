@@ -1,5 +1,6 @@
 using Godot;
 using System;
+namespace DemonEditor;
 
 public partial class BonusEfffect : Control
 {
