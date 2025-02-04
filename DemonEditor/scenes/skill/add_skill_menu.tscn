@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cx4pfo7cyo612"]
 
-[ext_resource type="Script" path="res://DemonEditor/scenes/skill/add_skill_menu/scripts/AddSkillMenu.cs" id="1_wwk6m"]
+[ext_resource type="Script" path="res://DemonEditor/scenes/skill/scripts/AddSkillMenu.cs" id="1_wwk6m"]
 
 [node name="AddSkillMenu" type="TabBar"]
 anchors_preset = 15

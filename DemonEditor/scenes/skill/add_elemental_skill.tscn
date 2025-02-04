@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://8o1prgr4av5f"]
 
-[ext_resource type="Script" path="res://DemonEditor/scenes/skill/add_skill_menu/scripts/AddElementalSkill.cs" id="1_6k13h"]
+[ext_resource type="Script" path="res://DemonEditor/scenes/skill/scripts/AddElementalSkill.cs" id="1_ja1ow"]
 
 [node name="AddElementalSkill" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6k13h")
+script = ExtResource("1_ja1ow")
 
 [node name="Hit Rate" type="Control" parent="."]
 anchors_preset = 0

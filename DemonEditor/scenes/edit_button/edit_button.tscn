@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqm1ds1ef3n0e"]
 
-[ext_resource type="Script" path="res://DemonEditor/scenes/edit_button/EditButton.cs" id="1_paqch"]
+[ext_resource type="Script" path="res://DemonEditor/scenes/edit_button/scripts/EditButton.cs" id="1_paqch"]
 
 [node name="EditButton" type="Button"]
 anchors_preset = 15

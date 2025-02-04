@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duoc2gydh34a5"]
 
-[ext_resource type="Script" path="res://DemonEditor/scenes/resistances/ResistanceDropdown.cs" id="1_kxe62"]
+[ext_resource type="Script" path="res://DemonEditor/scenes/resistances/scripts/ResistanceDropdown.cs" id="1_kxe62"]
 
 [node name="ResistanceDropdown" type="OptionButton"]
 anchors_preset = -1
