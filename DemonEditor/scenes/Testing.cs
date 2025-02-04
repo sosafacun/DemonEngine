@@ -24,7 +24,7 @@ public partial class Testing : Control{
         int yPos = 50;
 
         foreach(A affinity in affinities){
-            if(affinity.IsDefault != true){
+            if(affinity.IsDefault){
                 Control new_dropdownScene = dropdownMenu.Instantiate<Control>();
                 //set the label text to the name of the element / ailment
                 new_dropdownScene.GetNode<Label>("%Label").Text = affinity.Name;

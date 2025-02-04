@@ -6,37 +6,13 @@ using System.Windows.Markup;
 namespace DemonEditor;
 
 public partial class InitData: Node{
-    private static List<Element> _elements;
-    public static List<Element> elements{
-        get => _elements;
-        set => _elements = value;
-    }
-    private static List<Resistance> _resistances;
-    public static List<Resistance> resistances{
-        get => _resistances;
-        set => _resistances = value;
-    }
-    private static List<Ailment> _ailments;
-    public static List<Ailment> ailments{
-        get => _ailments;
-        set => _ailments = value;
-    }
-    private static List<Race> _races;
-    public static List<Race> races{
-        get => _races;
-        set => _races = value;
-    }
-    private static List<Stat> _stats;
-    public static List<Stat> stats{
-        get => _stats;
-        set => _stats = value;
-    }
 
-    private static List<Target> _targets;
-    public static List<Target> targets{
-        get => _targets;
-        set => _targets = value;
-    }
+    public static List<Element> elements{get;set;}
+    public static List<Resistance> resistances{get;set;}
+    public static List<Ailment> ailments{get;set;}
+    public static List<Race> races{get;set;}
+    public static List<Stat> stats{get;set;}
+    public static List<Target> targets{get;set;}
     public override void _Ready()
 	{
         LoadJsons();
