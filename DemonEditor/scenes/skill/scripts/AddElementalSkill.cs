@@ -12,7 +12,7 @@ public partial class AddElementalSkill : Control
 
 	//Get the dropdown where the stats will be displayed
 	private OptionButton StatDropdown;
-	private string BonusEffectPath = "./DemonEditor/scenes/skill/add_skill_menu/bonus_effect_on_elemental_skill.tscn";
+	private readonly string BonusEffectPath = "./DemonEditor/scenes/skill/add_skill_menu/bonus_effect_on_elemental_skill.tscn";
 	public override void _Ready()
 	{
 		ElementalDropdown = GetNode<OptionButton>("%ElementDropdown");
