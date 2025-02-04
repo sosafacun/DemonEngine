@@ -1,6 +1,6 @@
 using System.Windows.Markup;
 
-public class Stat{
+public class Stat: IData{
     public int Id {get;set;}
     public string Name {get;set;}
     private int _StatValue {get;set;}

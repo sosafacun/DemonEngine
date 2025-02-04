@@ -1,16 +1,8 @@
-public class Target{
-    private int _IdTarget {get;set;}
-    private string _TargetName {get;set;}
-
-    public int IdTarget{
-        get => _IdTarget;
-    }
-    public string TargetName {
-        get => _TargetName;
-    }
-
+public class Target: IData{
+    public int Id {get;set;}
+    public string Name {get;set;}
     public Target(int idTarget, string targetName){
-        _IdTarget = idTarget;
-        _TargetName = targetName;
+        Id = idTarget;
+        Name = targetName;
     }
 }

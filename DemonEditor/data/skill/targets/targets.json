@@ -1,10 +1,10 @@
 {
     "targets": [
-      {"_idTarget": 1, "_name": "SINGLE ENEMY"},
-      {"_idTarget": 2, "_name": "SINGLE ALLY"},
-      {"_idTarget": 3, "_name": "ALL ALLIES"},
-      {"_idTarget": 4, "_name": "ALL ENEMIES"},
-      {"_idTarget": 5, "_name": "RANDOM ENEMIES"},
-      {"_idTarget": 6, "_name": "ALL"}
+      {"idTarget": 1, "name": "SINGLE ENEMY"},
+      {"idTarget": 2, "name": "SINGLE ALLY"},
+      {"idTarget": 3, "name": "ALL ALLIES"},
+      {"idTarget": 4, "name": "ALL ENEMIES"},
+      {"idTarget": 5, "name": "RANDOM ENEMIES"},
+      {"idTarget": 6, "name": "ALL"}
     ]
   }

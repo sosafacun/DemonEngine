@@ -6,8 +6,8 @@ public partial class Testing : Control{
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-        DisplayMenu("%Elements", ".\\DemonEditor\\scenes\\resistances\\elemental_dropdown.tscn", InitData.elements);
-        DisplayMenu("%Ailments", ".\\DemonEditor\\scenes\\resistances\\ailment_dropdown.tscn", InitData.ailments);
+        DisplayMenu("%Elements", "./DemonEditor/scenes/resistances/elemental_dropdown.tscn", InitData.elements);
+        DisplayMenu("%Ailments", "./DemonEditor/scenes/resistances/ailment_dropdown.tscn", InitData.ailments);
         PopulateEditMenus("%ElementEditor", InitData.elements, true);
         PopulateEditMenus("%AilmentEditor", InitData.ailments, false);
 	}
@@ -38,9 +38,10 @@ public partial class Testing : Control{
         
     }
 
+    //This piece of code will be used for the Demon Creation Menu. It will list all of the selectable elements and ailments.
     private void PopulateEditMenus<A>(string tabName, List<A> affinities, bool isElemental) where A: IAffinity{
         Control selectedNode = GetNode<Control>(tabName);
-        var editTemplate = GD.Load<PackedScene>(".\\DemonEditor\\scenes\\affinity_editor\\affinity_editor.tscn");
+        var editTemplate = GD.Load<PackedScene>("./DemonEditor/scenes/affinity_editor/affinity_editor.tscn");
 
         int yPos = 50;
 
@@ -51,11 +52,7 @@ public partial class Testing : Control{
             new_EditScene.Position = new Vector2(0, yPos);
             yPos += 50;
 
-            if(tabName == "%ElementEditor"){
-                new_EditScene.isElemental = true;
-            } else {
-                new_EditScene.isElemental = false;
-            }
+            new_EditScene.isElemental = isElemental;
 
             selectedNode.AddChild(new_EditScene);
         }

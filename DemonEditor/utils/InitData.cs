@@ -41,7 +41,7 @@ public partial class InitData: Node{
         LoadJsons();
     }
 
-    public void LoadJsons(){
+    private void LoadJsons(){
 
         //Read, parse and load resistances from the .json file into a List
         string resistancesJson = File.ReadAllText("./DemonEditor/data/resistance/resistances.json");
@@ -67,5 +67,22 @@ public partial class InitData: Node{
         string statsJson = File.ReadAllText("./DemonEditor/data/stat/stats.json");
         var statsData = JsonConvert.DeserializeObject<Dictionary<string, List<Stat>>>(statsJson);
         stats = statsData["stats"];
+        
+        //Read, parse and load targets from the .json file into a List
+        string targetsJson = File.ReadAllText("./DemonEditor/data/skill/targets/targets.json");
+        var targetData = JsonConvert.DeserializeObject<Dictionary<string, List<Target>>>(targetsJson);
+        targets = targetData["targets"];
+    }
+
+    //Got tired of re-writing this, so I thought of a way to put it in here. Might move it to another global class later.
+    public static void PopulateNormalDropdown<D>(OptionButton dropdown, List<D> items) where D: IData{
+        foreach(var item in items){
+			dropdown.AddItem(item.Name);
+		}
+    }
+    public static void PopulateAffinityDropdown<A>(OptionButton dropdown, List<A> items) where A: IAffinity{
+        foreach(var item in items){
+			dropdown.AddItem(item.Name);
+		}
     }
 }

@@ -11,8 +11,9 @@ public class ElementalSkill: ISkill{
     public double StatMultiplier {get;set;}
     public double CriticalRate {get;set;}
     public Ailment BonusEffect {get;set;}
+    public int BonusEffectHitRate {get;set;}
     
-    public ElementalSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Element element, int numberOfHits, int skillBaseDamage, Stat mainStat, double statMultiplier, double criticalRate, Ailment bonusEffect){
+    public ElementalSkill(int id, string skillName, string skillDescription, Target target, double hitRate, Element element, int numberOfHits, int skillBaseDamage, Stat mainStat, double statMultiplier, double criticalRate, Ailment bonusEffect, int bonusEffectHitRate){
         Id = id;
         SkillName = skillName;
         SkillDescription = skillDescription;
@@ -25,6 +26,7 @@ public class ElementalSkill: ISkill{
         StatMultiplier = statMultiplier;
         CriticalRate = criticalRate;
         BonusEffect = bonusEffect;
+        BonusEffectHitRate = bonusEffectHitRate;
     }
     public int DamageFormula(){
         int damageDealt = 0;

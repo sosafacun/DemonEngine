@@ -1,4 +1,4 @@
-public class Race
+public class Race: IData
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -7,9 +7,5 @@ public class Race
     {
         Id = id;
         Name = name;
-    }
-
-    public Race()
-    {
     }
 }

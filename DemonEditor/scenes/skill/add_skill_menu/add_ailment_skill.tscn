@@ -7,3 +7,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Hit Rate" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 9.0
+offset_top = 320.0
+offset_right = 265.0
+offset_bottom = 384.0
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="HitRateLabel" type="Label" parent="Hit Rate"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 40.0
+text = "HitRate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HitRateTextEdit" type="TextEdit" parent="Hit Rate"]
+layout_mode = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 40.0
+placeholder_text = "1.00 - 99.99"
+wrap_mode = 1
