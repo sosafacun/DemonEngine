@@ -26,38 +26,9 @@ public class ElementalSkill: ISkill{
         CriticalRate = criticalRate;
         BonusEffect = bonusEffect;
     }
-}
-/*
-    public int DamageFormula(List<Demon> selectedDemons){
-            int damageDealt = 0;
-            float resistanceMultiplier;
-            float statMultiplier;
-            float attackerMultiplier;
-            Element demonAffinity;
-
-            demonAffinity = InitData.elements.Find(e => e.Name == Skill.skillName);
-
-            switch(demonAffinity.Resistance.Id){
-                case 1: //DEFAULT resistance
-                    resistanceMultiplier = 1;
-                case 2: //RES resistance
-                    resistanceMultiplier = 0.5;
-                case 3: //WK resistance
-                    resistanceMultiplier = 1.5;
-                case 4: //NULL resistance
-                    resistanceMultiplier = 0;
-                case 5: //RPL resistance
-                    resistanceMultiplier = 0;
-                case 6: //DR resistance
-                    resistanceMultiplier = -1;
-            }
-
-            statMultiplier = selectedDemon.Stats.Find(s => s.Name == "VIT"); //parse to float
-            resistanceMultiplier + = statMultiplier;
-
-            attackerMultiplier = attackerDemon.Stat.Find(s => S.Name == mainStat.Name).Get.statValue;
-            attackerMultiplier = attackerMultiplier * effectMultiplier;
-            damageDealt = (skillBaseDamage * attackerMultiplier) *resistanceMultiplier
-            return damageDealt;
+    public int DamageFormula(){
+        int damageDealt = 0;
+        return damageDealt;
     }
-*/
+}
+    

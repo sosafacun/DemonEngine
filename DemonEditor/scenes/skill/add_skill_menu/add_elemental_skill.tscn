@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://8o1prgr4av5f"]
 
-[ext_resource type="Script" path="res://DemonEditor/scenes/skill/add_skill_menu/AddElementalSkill.cs" id="1_6k13h"]
+[ext_resource type="Script" path="res://DemonEditor/scenes/skill/add_skill_menu/scripts/AddElementalSkill.cs" id="1_6k13h"]
 
 [node name="AddElementalSkill" type="Control"]
 layout_mode = 3
