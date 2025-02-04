@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://be5myel58bh78"]
 
 [ext_resource type="Script" path="res://DemonEditor/scenes/Testing.cs" id="1_61tje"]
-[ext_resource type="PackedScene" uid="uid://cx4pfo7cyo612" path="res://DemonEditor/scenes/skill/add_skill_menu.tscn" id="2_ll2dx"]
+[ext_resource type="PackedScene" uid="uid://cx4pfo7cyo612" path="res://DemonEditor/scenes/skill/add_skill_menu/add_skill_menu.tscn" id="2_ll2dx"]
 
 [node name="Testing" type="Control"]
 layout_mode = 3

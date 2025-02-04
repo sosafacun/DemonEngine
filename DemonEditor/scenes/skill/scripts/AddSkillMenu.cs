@@ -4,9 +4,9 @@ public partial class AddSkillMenu : TabBar
 {
 
 	//paths to the scenes to load them and show them.
-	private string AddElementalSkillMenuPath = "./DemonEditor/scenes/skill/add_elemental_skill.tscn";
-	private string AddDeBuffSkillMenuPath = "./DemonEditor/scenes/skill/add_de_buff_skill.tscn";
-	private string AddAilmentSkillMenuPath = "./DemonEditor/scenes/skill/add_ailment_skill.tscn";
+	private string AddElementalSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/elemental.tscn";
+	private string AddDeBuffSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/de_buff.tscn";
+	private string AddAilmentSkillMenuPath = "./DemonEditor/scenes/skill/add_skill_menu/ailment.tscn";
 
 	//Node where the loaded scenes will be instantiated
 	private Control SkillNode;

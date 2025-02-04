@@ -1,0 +1,150 @@
+[gd_scene load_steps=3 format=3 uid="uid://8o1prgr4av5f"]
+
+[ext_resource type="Script" path="res://DemonEditor/scenes/skill/scripts/AddElementalSkill.cs" id="1_jccal"]
+[ext_resource type="PackedScene" uid="uid://8wkhxja3hblk" path="res://DemonEditor/scenes/editable_line/editable_line.tscn" id="2_o7pel"]
+
+[node name="AddElementalSkill" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1368, 296)
+script = ExtResource("1_jccal")
+
+[node name="ElementalSelection" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 9.0
+offset_top = 320.0
+offset_right = 265.0
+offset_bottom = 384.0
+metadata/_edit_group_ = true
+
+[node name="ElementLabel" type="Label" parent="ElementalSelection"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 40.0
+text = "Element"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ElementDropdown" type="OptionButton" parent="ElementalSelection"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="EditableLine2" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 8.0
+offset_top = 376.0
+offset_right = 264.0
+offset_bottom = 440.0
+LabelText = "Hit Rate"
+LineEditPlaceholder = "10 - 99"
+OnlyAllowsNumbers = true
+CharacterLimit = 2
+
+[node name="StatSelection" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 9.0
+offset_top = 447.0
+offset_right = 265.0
+offset_bottom = 511.0
+metadata/_edit_group_ = true
+
+[node name="StatLabel" type="Label" parent="StatSelection"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 40.0
+text = "Main Stat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatDropdown" type="OptionButton" parent="StatSelection"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="BonusEffect" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 576.0
+offset_bottom = 640.0
+metadata/_edit_group_ = true
+
+[node name="BonusEffectLabel" type="Label" parent="BonusEffect"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 40.0
+text = "Applies Ailment?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonusEffectDropdown" type="CheckBox" parent="BonusEffect"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 308.0
+offset_bottom = 40.0
+
+[node name="EditableLine3" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 8.0
+offset_top = 512.0
+offset_right = 264.0
+offset_bottom = 576.0
+LabelText = "Base Damage"
+LineEditPlaceholder = "30 - 999"
+OnlyAllowsNumbers = true
+CharacterLimit = 3
+
+[node name="EditableLine5" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 320.0
+offset_top = 320.0
+offset_right = 576.0
+offset_bottom = 384.0
+LabelText = "Min. number of Hits"
+LineEditPlaceholder = "1"
+OnlyAllowsNumbers = true
+CharacterLimit = 1
+
+[node name="EditableLine6" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 320.0
+offset_top = 384.0
+offset_right = 576.0
+offset_bottom = 448.0
+LabelText = "Max Number of Hits"
+LineEditPlaceholder = "2 - 20"
+OnlyAllowsNumbers = true
+CharacterLimit = 2
+
+[node name="EditableLine" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 320.0
+offset_top = 512.0
+offset_right = 576.0
+offset_bottom = 576.0
+LabelText = "Stat Multiplier"
+LineEditPlaceholder = "0.1 - 2"
+OnlyAllowsNumbers = true
+CharacterLimit = 3
+
+[node name="EditableLine4" parent="." instance=ExtResource("2_o7pel")]
+offset_left = 320.0
+offset_top = 448.0
+offset_right = 576.0
+offset_bottom = 512.0
+LabelText = "Critical Rate"
+LineEditPlaceholder = "5 - 99"
+OnlyAllowsNumbers = true
+CharacterLimit = 2
+
+[connection signal="toggled" from="BonusEffect/BonusEffectDropdown" to="." method="AppliesAilmentSelected"]

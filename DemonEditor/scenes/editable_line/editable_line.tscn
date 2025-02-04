@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://8wkhxja3hblk"]
+
+[ext_resource type="Script" path="res://DemonEditor/scenes/editable_line/EditableLine.cs" id="1_dk7dh"]
+
+[node name="EditableLine" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 64.0
+script = ExtResource("1_dk7dh")
+
+[node name="EditableLineLabel" type="Label" parent="."]
+offset_right = 128.0
+offset_bottom = 40.0
+text = " Edit Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="EditableLineEdit" type="LineEdit" parent="."]
+unique_name_in_owner = true
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 40.0
+placeholder_text = "Edit limiters"
+alignment = 1
+max_length = 4
