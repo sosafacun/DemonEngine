@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Godot;
-using System.Windows.Markup;
 namespace DemonEditor;
 
 public partial class InitData: Node{
