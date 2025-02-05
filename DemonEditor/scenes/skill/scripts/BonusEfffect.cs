@@ -10,10 +10,10 @@ public partial class BonusEfffect : Control
 	public override void _Ready()
 	{
 		AilmentDropdown = GetNode<OptionButton>("%AilmentDropdown");
-		InitData.PopulateAffinityDropdown<Ailment>(AilmentDropdown, InitData.ailments);
+		GlobalMethods.PopulateAffinityDropdown<Ailment>(AilmentDropdown, InitData.ailments);
 
 		StatDropdown = GetNode<OptionButton>("%StatDropdown");
-		InitData.PopulateNormalDropdown<Stat>(StatDropdown, InitData.stats);
+		GlobalMethods.PopulateNormalDropdown<Stat>(StatDropdown, InitData.stats);
 
 		PersistsAfterBattleCheckBox = GetNode<CheckBox>("%PersistsAfterBattleCheckBox");
 	}

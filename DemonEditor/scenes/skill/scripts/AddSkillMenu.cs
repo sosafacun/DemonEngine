@@ -18,7 +18,7 @@ public partial class AddSkillMenu : TabBar
 		SkillNode = GetNode<Control>("%SkillMenu");
 
 		TargetDropdown = GetNode<OptionButton>("%TargetDropdown");
-		InitData.PopulateNormalDropdown<Target>(TargetDropdown, InitData.targets);
+		GlobalMethods.PopulateNormalDropdown<Target>(TargetDropdown, InitData.targets);
 	}
 
 	//Depending on the selected type of skill, the menu for that skill creation will pop up.

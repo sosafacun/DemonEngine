@@ -52,14 +52,5 @@ public partial class InitData: Node{
     }
 
     //Got tired of re-writing this, so I thought of a way to put it in here. Might move it to another global class later.
-    public static void PopulateNormalDropdown<D>(OptionButton dropdown, List<D> items) where D: IData{
-        foreach(var item in items){
-			dropdown.AddItem(item.Name);
-		}
-    }
-    public static void PopulateAffinityDropdown<A>(OptionButton dropdown, List<A> items) where A: IAffinity{
-        foreach(var item in items){
-			dropdown.AddItem(item.Name);
-		}
-    }
+
 }

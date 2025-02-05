@@ -16,10 +16,10 @@ public partial class AddElementalSkill : Control
 	public override void _Ready()
 	{
 		ElementalDropdown = GetNode<OptionButton>("%ElementDropdown");
-		InitData.PopulateAffinityDropdown<Element>(ElementalDropdown, InitData.elements);
+		GlobalMethods.PopulateAffinityDropdown<Element>(ElementalDropdown, InitData.elements);
 
 		StatDropdown = GetNode<OptionButton>("%StatDropdown");
-		InitData.PopulateNormalDropdown<Stat>(StatDropdown, InitData.stats);
+		GlobalMethods.PopulateNormalDropdown<Stat>(StatDropdown, InitData.stats);
 	}
 
 	//This expands the elemental skill to have an ailment when the checkbox is toggled.
