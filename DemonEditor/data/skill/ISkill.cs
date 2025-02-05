@@ -5,4 +5,5 @@ public interface ISkill{
     string SkillDescription {get;set;}
     Target Target {get;set;}
     IAffinity Affinity {get;set;}
+    int Tier {get;set;}
 }

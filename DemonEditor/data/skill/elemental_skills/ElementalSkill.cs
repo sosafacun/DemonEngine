@@ -8,11 +8,13 @@ public class ElementalSkill: ISkill{
     public IAffinity Affinity {get;set;}
     public int SkillBaseDamage {get;set;}
     public Stat MainStat {get;set;}
-    public int NumberOfHits {get;set;}
+    public int MinNumberOfHits {get;set;}
+    public int MaxNumberOfHits {get;set;}
     public double StatMultiplier {get;set;}
     public double CriticalRate {get;set;}
     public Ailment BonusEffect {get;set;}
     public int BonusEffectHitRate {get;set;}
+    public int Tier {get;set;}
     
     public ElementalSkill(){
     }

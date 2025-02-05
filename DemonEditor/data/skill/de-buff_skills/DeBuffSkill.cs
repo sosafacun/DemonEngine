@@ -10,6 +10,7 @@ public class DeBuffSkill : ISkill{
     public IAffinity Affinity {get;set;}
     public int SkillBaseDamage {get;set;}
     public List<Stat> AffectedStats {get;set;}
+    public int Tier {get;set;}
 
     public DeBuffSkill(int id, string skillName, string skillDescription, Target target, Element element, List<Stat> affectedStats)
     {

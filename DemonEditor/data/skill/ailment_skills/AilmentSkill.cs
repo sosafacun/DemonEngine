@@ -9,6 +9,7 @@ public class AilmentSkill : ISkill
     public IAffinity Affinity {get;set;}
     public Stat MainStat {get;set;}
     public double StatMultiplier {get;set;}
+    public int Tier {get;set;}
 
     public AilmentSkill()
     {
