@@ -21,7 +21,7 @@ InitData="*res://DemonEditor/utils/InitData.cs"
 
 [dotnet]
 
-project/assembly_name="smt.net-redo"
+project/assembly_name="Demon Engine"
 
 [rendering]
 

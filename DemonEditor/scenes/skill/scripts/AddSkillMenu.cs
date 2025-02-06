@@ -49,6 +49,7 @@ public partial class AddSkillMenu : TabBar
 		SkillNode.AddChild(newLoadedMenu);
 	}
 
+	//Get all the nodes inside the parent. This is used to save the data inside them.
 	private static List<Control> _GetNodes(){
 		foreach(Control node in menu.GetChildren()){
 			children.Add(node);
