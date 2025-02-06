@@ -1,12 +1,12 @@
 namespace DemonEditor;
 public class ElementalSkill: ISkill{
     public int Id {get;set;}
-    public string SkillName {get;set;}
-    public string SkillDescription {get;set;}
+    public string Name {get;set;}
+    public string Description {get;set;}
     public Target Target {get;set;}
     public double HitRate {get;set;}
     public IAffinity Affinity {get;set;}
-    public int SkillBaseDamage {get;set;}
+    public int BaseDamage {get;set;}
     public Stat MainStat {get;set;}
     public int MinNumberOfHits {get;set;}
     public int MaxNumberOfHits {get;set;}

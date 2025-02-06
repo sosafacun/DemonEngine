@@ -8,7 +8,6 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(1368, 296)
@@ -38,7 +37,8 @@ offset_right = 256.0
 offset_bottom = 40.0
 alignment = 1
 
-[node name="EditableLine2" parent="." instance=ExtResource("2_o7pel")]
+[node name="HitRate" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 8.0
 offset_top = 376.0
 offset_right = 264.0
@@ -97,7 +97,8 @@ offset_left = 180.0
 offset_right = 308.0
 offset_bottom = 40.0
 
-[node name="EditableLine3" parent="." instance=ExtResource("2_o7pel")]
+[node name="BaseDamage" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 8.0
 offset_top = 512.0
 offset_right = 264.0
@@ -107,7 +108,8 @@ LineEditPlaceholder = "30 - 999"
 OnlyAllowsNumbers = true
 CharacterLimit = 3
 
-[node name="EditableLine5" parent="." instance=ExtResource("2_o7pel")]
+[node name="MinNumberOfHits" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 320.0
 offset_top = 320.0
 offset_right = 576.0
@@ -117,7 +119,8 @@ LineEditPlaceholder = "1"
 OnlyAllowsNumbers = true
 CharacterLimit = 1
 
-[node name="EditableLine6" parent="." instance=ExtResource("2_o7pel")]
+[node name="MaxNumberOfHits" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 320.0
 offset_top = 384.0
 offset_right = 576.0
@@ -127,7 +130,8 @@ LineEditPlaceholder = "2 - 20"
 OnlyAllowsNumbers = true
 CharacterLimit = 2
 
-[node name="EditableLine" parent="." instance=ExtResource("2_o7pel")]
+[node name="StatMultiplier" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 320.0
 offset_top = 512.0
 offset_right = 576.0
@@ -137,7 +141,8 @@ LineEditPlaceholder = "0.1 - 2"
 OnlyAllowsNumbers = true
 CharacterLimit = 3
 
-[node name="EditableLine4" parent="." instance=ExtResource("2_o7pel")]
+[node name="CriticalRate" parent="." instance=ExtResource("2_o7pel")]
+unique_name_in_owner = true
 offset_left = 320.0
 offset_top = 448.0
 offset_right = 576.0

@@ -3,23 +3,16 @@ using System.Collections.Generic;
 namespace DemonEditor;
 public class DeBuffSkill : ISkill{
     public int Id {get;set;}
-    public string SkillName {get;set;}
-    public string SkillDescription {get;set;}
+    public string Name {get;set;}
+    public string Description {get;set;}
     public Target Target {get;set;}
     public double HitRate {get;set;}
     public IAffinity Affinity {get;set;}
-    public int SkillBaseDamage {get;set;}
     public List<Stat> AffectedStats {get;set;}
     public int Tier {get;set;}
 
-    public DeBuffSkill(int id, string skillName, string skillDescription, Target target, Element element, List<Stat> affectedStats)
+    public DeBuffSkill()
     {
-        Id = id;
-        SkillName = skillName;
-        SkillDescription = skillDescription;
-        Target = target;
-        Affinity = element;
-        AffectedStats = affectedStats;
     }
 }
 

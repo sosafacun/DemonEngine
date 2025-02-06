@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Godot;
 namespace DemonEditor;
 
@@ -11,14 +12,17 @@ public partial class AddSkillMenu : TabBar
 
 	//Node where the loaded scenes will be instantiated
 	private Control SkillNode;
-
+	private Control ParentNode;
 	//drowpdown where the targets will be populated
 	private OptionButton TargetDropdown;
+	private static List<Control> children = new List<Control>();
+	private static AddSkillMenu menu = new AddSkillMenu();
 	public override void _Ready(){
+		menu = this;
 		SkillNode = GetNode<Control>("%SkillMenu");
 
 		TargetDropdown = GetNode<OptionButton>("%TargetDropdown");
-		GlobalMethods.PopulateNormalDropdown<Target>(TargetDropdown, InitData.targets);
+		GlobalMethods.PopulateNormalDropdown(TargetDropdown, InitData.targets);
 	}
 
 	//Depending on the selected type of skill, the menu for that skill creation will pop up.
@@ -43,5 +47,17 @@ public partial class AddSkillMenu : TabBar
 		Control newLoadedMenu = packedScene.Instantiate<Control>();
 
 		SkillNode.AddChild(newLoadedMenu);
+	}
+
+	private static List<Control> _GetNodes(){
+		foreach(Control node in menu.GetChildren()){
+			children.Add(node);
+		}
+		return children;
+	}
+    public static List<Control> GetNodes() => _GetNodes();
+
+    private void OnSaveButtonPressed(){
+		SaveData.ElementalSkill(menu);
 	}
 }

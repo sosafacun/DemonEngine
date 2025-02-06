@@ -2,8 +2,8 @@ namespace DemonEditor;
 public class AilmentSkill : ISkill
 {
     public int Id {get;set;}
-    public string SkillName {get;set;}
-    public string SkillDescription {get;set;}
+    public string Name {get;set;}
+    public string Description {get;set;}
     public Target Target {get;set;}
     public double HitRate {get;set;}
     public IAffinity Affinity {get;set;}

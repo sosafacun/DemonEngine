@@ -11,7 +11,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_naaba")
 
-[node name="EditableLine" parent="." instance=ExtResource("2_4ff2d")]
+[node name="SkillName" parent="." instance=ExtResource("2_4ff2d")]
+unique_name_in_owner = true
 offset_left = 104.0
 offset_top = 16.0
 offset_right = 360.0
@@ -105,7 +106,8 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="EditableLine2" parent="." instance=ExtResource("2_4ff2d")]
+[node name="SkillTier" parent="." instance=ExtResource("2_4ff2d")]
+unique_name_in_owner = true
 offset_left = 464.0
 offset_top = 16.0
 offset_right = 720.0
@@ -115,4 +117,12 @@ LineEditPlaceholder = "1 - 20"
 OnlyAllowsNumbers = true
 CharacterLimit = 2
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 968.0
+offset_top = 32.0
+offset_right = 1088.0
+offset_bottom = 104.0
+
 [connection signal="item_selected" from="SkillType/SkillTypeDropdown" to="." method="SkillTypeSelection"]
+[connection signal="pressed" from="Button" to="." method="OnSaveButtonPressed"]
