@@ -19,9 +19,10 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.988
 offset_bottom = -0.128052
-current_tab = 0
+current_tab = 1
 
 [node name="Editor" type="TabBar" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -67,7 +68,6 @@ color = Color(0.263459, 0.119678, 0.0630892, 1)
 
 [node name="ElementEditor" type="TabBar" parent="TabContainer"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 

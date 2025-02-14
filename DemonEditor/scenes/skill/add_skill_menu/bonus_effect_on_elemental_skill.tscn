@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_f6uc0")
 
-[node name="Hit Rate" type="Control" parent="."]
+[node name="AilmentHitRate" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 9.0
@@ -19,7 +19,7 @@ offset_top = 320.0
 offset_right = 265.0
 offset_bottom = 384.0
 
-[node name="HitRateLabel" type="Label" parent="Hit Rate"]
+[node name="HitRateLabel" type="Label" parent="AilmentHitRate"]
 layout_mode = 0
 offset_right = 128.0
 offset_bottom = 40.0
@@ -27,7 +27,7 @@ text = "Ailment Hit Rate"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HitRateTextEdit" type="TextEdit" parent="Hit Rate"]
+[node name="HitRateTextEdit" type="TextEdit" parent="AilmentHitRate"]
 layout_mode = 0
 offset_left = 128.0
 offset_right = 256.0

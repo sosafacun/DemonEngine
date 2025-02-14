@@ -15,10 +15,8 @@ public partial class AddSkillMenu : TabBar
 	private Control ParentNode;
 	//drowpdown where the targets will be populated
 	private OptionButton TargetDropdown;
-	private static List<Control> children = new List<Control>();
-	private static AddSkillMenu menu = new AddSkillMenu();
+	private Control _CurrentMenuInstance;
 	public override void _Ready(){
-		menu = this;
 		SkillNode = GetNode<Control>("%SkillMenu");
 
 		TargetDropdown = GetNode<OptionButton>("%TargetDropdown");
@@ -49,16 +47,8 @@ public partial class AddSkillMenu : TabBar
 		SkillNode.AddChild(newLoadedMenu);
 	}
 
-	//Get all the nodes inside the parent. This is used to save the data inside them.
-	private static List<Control> _GetNodes(){
-		foreach(Control node in menu.GetChildren()){
-			children.Add(node);
-		}
-		return children;
-	}
-    public static List<Control> GetNodes() => _GetNodes();
-
     private void OnSaveButtonPressed(){
-		SaveData.ElementalSkill(menu);
+		SaveData saveData = new SaveData(this);
+		saveData.ElementalSkill();
 	}
 }

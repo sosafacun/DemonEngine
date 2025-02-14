@@ -53,10 +53,8 @@ public partial class Testing : Control{
 
         foreach(A affinity in affinities){
             if(isElemental){
-                if(affinity.IsDefault){
-                    selectedNode.AddChild(CreateNewAffinityEditor(yPos, isElemental, affinity));
-                    yPos += 50;
-                }
+                selectedNode.AddChild(CreateNewAffinityEditor(yPos, isElemental, affinity));
+                yPos += 50;
 
             } else if (!affinity.IsDefault) {
                 selectedNode.AddChild(CreateNewAffinityEditor(yPos, isElemental, affinity));
